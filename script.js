@@ -19,8 +19,7 @@ class Scene1 extends Phaser.Scene {
         super('Scene1');
     }
     preload(){
-        this.load.path = "./assets/";
-        this.load.image('2', '2.png');
+        this.load.image('2', './assets/2.png');
     }
     create(){
         this.bg = this.add.image(400, 260, '2');
@@ -77,9 +76,8 @@ class Scene2 extends Phaser.Scene {
         super('Scene2');
     }
     preload(){
-        this.load.path = "./assets/";
-        this.load.image('1', '1.png');
-        this.load.audio('a2', 'audio2.mp3');
+        this.load.image('1', './assets/1.png');
+        this.load.audio('a2', './assets/audio2.mp3');
     }
     create(){
         this.cameras.main.fadeIn(1000, 0, 0, 0)
@@ -179,9 +177,8 @@ class Scene3 extends Phaser.Scene {
         super('Scene3');
     }
     preload(){
-        this.load.path = "./assets/";
-        this.load.image('p1', 'p1.png');
-        this.load.audio('a1', 'audio1.wav');
+        this.load.image('p1', './assets/p1.png');
+        this.load.audio('a1', './assets/audio1.wav');
     }
     create(){
         this.cameras.main.setBackgroundColor('#1d1d1f');
