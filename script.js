@@ -19,7 +19,7 @@ class Scene1 extends Phaser.Scene {
         super('Scene1');
     }
     preload(){
-        this.load.image('2', './assets/2.png');
+        this.load.image('2', './assets/2.PNG');
     }
     create(){
         this.bg = this.add.image(400, 260, '2');
@@ -76,7 +76,7 @@ class Scene2 extends Phaser.Scene {
         super('Scene2');
     }
     preload(){
-        this.load.image('1', './assets/1.png');
+        this.load.image('1', './assets/1.PNG');
         this.load.audio('a2', './assets/audio2.mp3');
     }
     create(){
